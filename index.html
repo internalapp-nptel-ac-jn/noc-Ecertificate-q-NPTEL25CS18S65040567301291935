@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open PDF</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        button {
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="openPDF()">Click Here</button>
+
+    <script>
+        function openPDF() {
+            let pdfUrl = "Question_Bank_[1].pdf"; // Change this to your actual PDF file name
+            if (window.innerWidth <= 768) {
+                // Open PDF directly on mobile
+                window.location.href = pdfUrl;
+            } else {
+                // Open PDF in a new tab on PC
+                window.open(pdfUrl, "_blank");
+            }
+        }
+    </script>
+</body>
+</html>
