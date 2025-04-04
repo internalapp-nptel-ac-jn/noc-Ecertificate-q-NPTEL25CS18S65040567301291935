@@ -1,53 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificate Download</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #fff;
-            margin: 0;
-        }
-        .btn {
-            background-color: #2962FF;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 6px;
-            font-size: 16px;
-            cursor: pointer;
-            text-decoration: none;
-            text-align: center;
-            font-family: Arial, sans-serif;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-        }
-        .btn:hover {
-            background-color: #1E50E6;
-        }
-        @media (max-width: 768px) {
-            .btn {
-                font-size: 14px;
-                padding: 10px 18px;
-            }
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Download</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fff;
+            margin: 0;
+        }
+        .btn {
+            background-color: #2962FF;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        .btn:hover {
+            background-color: #1E50E6;
+        }
+        @media (max-width: 768px) {
+            .btn {
+                font-size: 14px;
+                padding: 10px 18px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <a href="NPTEL25CS18S65040567301291935.pdf" class="btn" id="downloadBtn" target="_blank">Course Certificate</a>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const button = document.getElementById("downloadBtn");
-            if (/Mobi|Android/i.test(navigator.userAgent)) {
-                button.setAttribute("download", "NPTEL25CS18S65040567301291935.pdf");
-                button.setAttribute("target", "_self");
-            }
-        });
-    </script>
+    <a href="NPTEL25CS18S65040567301291935.pdf" class="btn" id="downloadBtn" target="_blank">Course Certificate</a>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const button = document.getElementById("downloadBtn");
+            if (/Mobi|Android/i.test(navigator.userAgent)) {
+                button.setAttribute("download", "NPTEL25CS18S65040567301291935.pdf");
+                button.setAttribute("target", "_self");
+            }
+        });
+    </script>
 </body>
 </html>
-
