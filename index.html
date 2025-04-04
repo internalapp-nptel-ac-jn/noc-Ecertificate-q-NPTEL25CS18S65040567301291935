@@ -31,9 +31,14 @@
 </head>
 <body>
     <a href="NPTEL25CS18S65040567301291935.pdf" class="btn" id="downloadBtn" target="_blank">Download Certificate</a>
-
-
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const button = document.getElementById("downloadBtn");
-            if (/Mobi|Android/i.test(navigator.userAgent))
+            if (/Mobi|Android/i.test(navigator.userAgent)) {
+                button.setAttribute("download", "NPTEL25CS18S65040567301291935.pdf");
+                button.setAttribute("target", "_self");
+            }
+        });
+    </script>
+</body>
+</html>
